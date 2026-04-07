@@ -3,7 +3,7 @@
 # ==========================================
 FROM alpine:3.19 AS builder
 
-RUN apk add --no-cache wget
+RUN apk add --no-cache wget=1.21.4-r0
 
 ARG TINI_VERSION=v0.19.0
 WORKDIR /tmp
@@ -37,4 +37,3 @@ USER webserver
 ENTRYPOINT ["/tini", "--"]
 
 CMD ["/opt/webserver/webserver.sh"]
-

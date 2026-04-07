@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: webserver:v0.0.1
+    image: webserver:v0.0.2
     container_name: webserver
     ports:
       - "8080:8080"
