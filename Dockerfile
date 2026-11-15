@@ -30,7 +30,7 @@ COPY --chown=webserver:webserver webserver.sh .
 
 RUN chmod +x webserver.sh
 
-EXPOSE 8080
+EXPOSE 8888
 
 USER webserver
 
